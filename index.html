@@ -1,16 +1,14 @@
 <DOCTYPE html>
 <html>
-<head>
-  <script>
-    var nt= document.getElementById("numtot");
-    var result= Math.floor(Math.random() * nt) + 1;
-    alert(result);
-  </script>
-</head>
 <body>
   <form>
     <h3>inserisci il numero totale di studenti della classe</h3><br>
     <input type="text" id="numtot">
   </form>
+  <script type="text/javascript">
+    var nt= document.getElementById("numtot");
+    var result= Math.floor(Math.random() * nt);
+    alert(result);
+  </script>
 </body>
 </html>
