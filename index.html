@@ -8,12 +8,13 @@
         <script>
           function Enter() {
             var Numdicaselle = document.getElementById("num").value;
+            var caselle = "" ;
             for (var i = 0; i < Numdicaselle; i++) {
-              var text += '<p>' + '<input type="text" class="classtesto">' + '</p>;
+              var caselle +='<input type="text" class="classtesto">'
             }
-            document.body.innerHTML = "scegli chi interrogare" + "<br>" + text + '<button onclick="vabene()" >va bene?</button>'
+            document.body.innerHTML = "<br>" + caselle + '<input type="submit" value="start random" onclick="random()" >'
           }
-          function vabene() {
+          function random() {
             var lista
             var random = Math.floor(Math.random() * Ntext)
             for (var a = 0; a < Ntext; a++) {
