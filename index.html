@@ -1,16 +1,27 @@
 <DOCTYPE html>
 <html>
 <body>
-  <form onsubmit="random()">
-    <h3>inserisci il numero totale di studenti della classe</h3><br>
-    <input type="text" id="numtot">
-  </form>
-  <script type="text/javascript">
-    function random(){
-      var studenti = document.getElementById('numtot');
-      
-      var result= Math.floor(Math.random() * studenti);
-      
-  </script>
+  <form>
+    <h3>insert the number of the students: </h3>
+    <input type="text" id="num">
+    <input type="submit" id="enter" onclick="Enter()">
+        <script>
+          function Enter() {
+            var Numdicaselle = document.getElementById("num").value;
+            for (var i = 0; i < Numdicaselle; i++) {
+              var text += '<p>' + '<input type="text" class="classtesto">' + '</p>
+            }
+            document.body.innerHTML = "scegli chi interrogare" + "<br>" + text + '<button onclick="vabene()" >va bene?</button>';
+          }
+          function vabene() {
+            var lista
+            var random = Math.floor(Math.random() * Ntext)
+            for (var a = 0; a < Ntext; a++) {
+              lista += "<br>" + '<li class="intclass">' + document.getElementsByClassName("classtesto")[a].value + '</Li >'
+            }
+            document.body.innerHTML = lista
+            document.getElementsByClassName("intclass")[rnd].style.color = "red"
+          } 
+        </script> 
 </body>
 </html>
