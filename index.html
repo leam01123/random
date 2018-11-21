@@ -4,29 +4,13 @@
   <form onsubmit="random()">
     <h3>inserisci il numero totale di studenti della classe</h3><br>
     <input type="text" id="numtot">
-    <input type="submit">
   </form>
   <script type="text/javascript">
     function random(){
-    var result= Math.floor(Math.random() * 100);
-    document.write(result);
-    }
-    switch(result) {
-    case 1:
-        alert("idan");
-        break;
-    case 2:
-        alert("alex");
-        break;
-        case 3:
-        alert("leam");
-        break;
-    case 4:
-        alert("sacha");
-        break;
-    default:
-       alert("numero non valido");
-} 
+      var studenti = document.getElementById('numtot');
+      
+      var result= Math.floor(Math.random() * studenti);
+      
   </script>
 </body>
 </html>
